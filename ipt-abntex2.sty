@@ -1,0 +1,79 @@
+% ---
+% Area de Concentracao
+% ---
+\newcommand{\areaname}{\'Area de Concentra\c{c}\~ao: }
+
+\providecommand{\imprimirAreaConcentracaoRotulo}{}
+\providecommand{\imprimirAreaConcentracao}{}
+\newcommand{\areaconcentracao}[2][\areaname]%
+  {\renewcommand{\imprimirAreaConcentracaoRotulo}{#1}%
+   \renewcommand{\imprimirAreaConcentracao}{#2}}
+
+% ---
+% configurações da fonte dos títulos: capítulo e seção.
+% ---
+\renewcommand{\ABNTEXchapterfont}{\fontseries{b}}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+
+% ---
+% alterando a capa
+% ---
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+		
+    {\ABNTEXchapterfont\imprimirautor} \\[8.5cm]
+
+    %\vfill
+    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+    \vfill
+    
+    \imprimirlocal \\
+		\imprimirdata
+
+  \end{capa}
+}
+
+% ---
+% folha de rosto 
+% ---
+\makeatletter
+
+\renewcommand{\folhaderostocontent}{
+	\begin{center}
+	\center
+	\SingleSpacing	
+	{\ABNTEXchapterfont\large\imprimirautor} \\[5.5cm]
+
+	{\ABNTEXchapterfont\large\imprimirtitulo}
+	\vfill
+	
+	\abntex@ifnotempty{\imprimirpreambulo}{%
+		\hspace{.35\textwidth}
+		\begin{minipage}{.5\textwidth}
+		
+		\imprimirpreambulo
+		\SingleSpacing
+
+		{\imprimirAreaConcentracaoRotulo \imprimirAreaConcentracao}
+		\SingleSpacing
+		\SingleSpacing
+
+		{\imprimirorientadorRotulo~\imprimirorientador}
+
+		\abntex@ifnotempty{\imprimircoorientador}{%
+		{\imprimircoorientadorRotulo~\imprimircoorientador}%
+		}%
+		\end{minipage}%
+		\vspace*{\fill}
+	}%
+	
+	\large\imprimirlocal \\
+	\large\@date
+	
+	\end{center}
+}
+
+\makeatother
