@@ -108,7 +108,7 @@ Arquivo exemplo
     		pdfauthor={\@author},
         	pdfsubject={\imprimirpreambulo},
     	    pdfcreator={LaTeX with abnTeX2},
-    		pdfkeywords={golang}{go}{programação paralela}{avaliação}, 
+    		pdfkeywords={palavras}{chave}{aqui}, 
     		colorlinks=true,       		% false: boxed links; true: colored links
         	linkcolor=blue,          	% color of internal links
         	citecolor=blue,        		% color of links to bibliography
