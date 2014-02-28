@@ -13,4 +13,4 @@ Para usá-lo basta incluir no preâmbulo de seu documento .tex:
 Arquivo exemplo
 ===============
 
-O arquivo-exemplo.tex localizado no diretorio raiz, e um arquivo auto explicativo e deve ser utilizado em sua dissertaçao, pois nele esta contido configuraçoes necessarias nao inseridas no template de formataçao.
+O arquivo-exemplo.tex localizado no diretório raiz, é um arquivo auto explicativo e deve ser utilizado em sua dissertação, pois nele está contido configurações necessárias não inseridas no template de formatação.
