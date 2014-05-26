@@ -8,7 +8,7 @@ Como usar
 
 Para usá-lo basta incluir no preâmbulo de seu documento .tex:
 
-    \usepackage{ipt-abntex2}
+    \usepackage{iptex}
     
 Arquivo exemplo
 ===============
