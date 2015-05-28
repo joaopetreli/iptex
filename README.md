@@ -14,3 +14,7 @@ Arquivo exemplo
 ===============
 
 O arquivo-exemplo.tex localizado no diretório raiz, é um arquivo auto explicativo e deve ser utilizado em sua dissertação, pois nele está contido configurações necessárias não inseridas no template de formatação.
+
+Palavras-chave
+==============
+IPT, LaTeX
